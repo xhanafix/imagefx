@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageFX Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <header>
+            <h1>ImageFX Prompt Generator</h1>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-sun"></i>
+            </div>
+        </header>
+
+        <section class="api-key-section">
+            <h2>OpenRouter API Key</h2>
+            <div class="api-key-container">
+                <input type="password" id="api-key" placeholder="Enter your OpenRouter API key">
+                <button id="save-api-key" class="btn">Save Key</button>
+                <button id="reset-api-key" class="btn btn-secondary">Reset Key</button>
+            </div>
+            <p class="api-status" id="api-status">API Key: <span id="api-status-value">Not Set</span></p>
+        </section>
+
+        <section class="prompt-section">
+            <h2>Create Your Prompt</h2>
+            <div class="input-container">
+                <textarea id="user-input" placeholder="Describe the image you want to generate (e.g., a sunset over the mountains)"></textarea>
+                <button id="generate-btn" class="btn btn-primary">Enhance Prompt</button>
+            </div>
+        </section>
+
+        <section class="output-section">
+            <h2>Enhanced Prompt</h2>
+            <div class="output-container">
+                <div class="copy-notification" id="copy-notification">Copied to clipboard!</div>
+                <div class="output-box" id="output-box">
+                    <p class="placeholder">Your enhanced prompt will appear here...</p>
+                </div>
+                <button id="copy-btn" class="btn">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+        </section>
+
+        <section class="examples-section">
+            <h2>Example Prompts</h2>
+            <div class="examples-container">
+                <div class="example-card">
+                    <p class="example-title">Landscape</p>
+                    <p class="example-text">A misty forest at dawn</p>
+                </div>
+                <div class="example-card">
+                    <p class="example-title">Portrait</p>
+                    <p class="example-text">A cyberpunk character with neon lights</p>
+                </div>
+                <div class="example-card">
+                    <p class="example-title">Still Life</p>
+                    <p class="example-text">A bowl of fruit in renaissance style</p>
+                </div>
+                <div class="example-card">
+                    <p class="example-title">Fantasy</p>
+                    <p class="example-text">A dragon flying over a medieval castle</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>ImageFX Prompt Generator uses <a href="https://openrouter.ai" target="_blank">OpenRouter API</a> with Google/LearnLM-1.5-Pro-Experimental.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
