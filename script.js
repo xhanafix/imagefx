@@ -186,7 +186,10 @@ Return ONLY the enhanced prompt with no additional text, explanations, or markdo
         })
         .then(data => {
             // Extract the enhanced prompt from the response
-            const enhancedPrompt = data.choices[0].message.content.trim();
+            let enhancedPrompt = data.choices[0].message.content.trim();
+            
+            // Remove "/imagine" from the beginning of the prompt if it exists
+            enhancedPrompt = enhancedPrompt.replace(/^\/imagine\s*/i, '');
             
             // Hide loading indicator
             loadingElement.style.display = 'none';
