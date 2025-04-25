@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // OpenRouter API Configuration
     const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
-    const MODEL = 'google/learnlm-1.5-pro-experimental:free';
+    const MODEL = 'google/gemini-2.0-flash-exp:free';
     
     // State
     let apiKey = localStorage.getItem('openrouter_api_key') || '';

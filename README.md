@@ -1,13 +1,13 @@
 # ImageFX Prompt Generator
 
-A web-based application that enhances simple image descriptions into detailed, realistic prompts for ImageFX using the Google/LearnLM-1.5-Pro-Experimental AI model via OpenRouter API.
+A web-based application that enhances simple image descriptions into detailed, realistic prompts for ImageFX using the Google/Gemini-2.0-Flash-Exp AI model via OpenRouter API.
 
 Visit the live application: [https://xhanafix.github.io/imagefx](https://xhanafix.github.io/imagefx)
 
 ## Features
 
 - **AI-Powered Prompt Enhancement**: Transform simple descriptions into detailed, realistic prompts.
-- **OpenRouter API Integration**: Uses the Google/LearnLM-1.5-Pro-Experimental:Free model via OpenRouter.
+- **OpenRouter API Integration**: Uses the Google/Gemini-2.0-Flash-Exp:Free model via OpenRouter.
 - **API Key Management**: Securely save your OpenRouter API key in local storage.
 - **Auto-Copy Functionality**: Enhanced prompts are automatically copied to clipboard.
 - **Dark/Light Theme**: Toggle between dark and light themes.
@@ -82,5 +82,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- [OpenRouter](https://openrouter.ai/) for providing access to Google/LearnLM-1.5-Pro-Experimental
+- [OpenRouter](https://openrouter.ai/) for providing access to Google/Gemini-2.0-Flash-Exp
 - [Font Awesome](https://fontawesome.com/) for the icons 
